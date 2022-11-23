@@ -69,6 +69,7 @@ export function App() {
     });
   };
 
+  //sort in alphabetic or commit date 
   const sortData = (data, sort) => {
     if (sort === 'alphabetic') {
       return data.sort((a, b) => {
