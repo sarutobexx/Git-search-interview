@@ -55,6 +55,14 @@ export function App() {
                 Last Commit: {formatDate(item.updated_at)}
               </small>
             </p>
+            <a
+              href={`https://github.com/${item.full_name}`}
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Go to Repo
+            </a>
           </div>
         </div>
       );
@@ -219,15 +227,15 @@ export function App() {
               justifyContent: 'center',
               alignItems: 'center',
               textAlign: 'center',
-              marginTop: '25px',
-              marginBottom: '25px',
+              marginTop: '20px',
+              marginBottom: '20px',
               width: '100%',
               border: '1px solid #E9E9E9',
               borderRadius: '3px',
               padding: '1px',
               backgroundColor: '#F5F5F5',
               boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.1)',
-              display: 'flex',
+              paddingBottom: '10px',
             }}
           >
             {renderData(
